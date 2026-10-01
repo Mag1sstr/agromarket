@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "name": "Картофель",
+      "category": "Овощи",
+      "price": 350,
+      "unit": "кг",
+      "image": "/images/potato.jpg"
+    },
+    {
+      "name": "Морковь",
+      "category": "Овощи",
+      "price": 280,
+      "unit": "кг",
+      "image": "/images/carrot.jpg"
+    },
+    {
+      "name": "Помидоры",
+      "category": "Овощи",
+      "price": 750,
+      "unit": "кг",
+      "image": "/images/tomato.jpg"
+    },
+    {
+      "name": "Огурцы",
+      "category": "Овощи",
+      "price": 650,
+      "unit": "кг",
+      "image": "/images/cucumber.jpg"
+    },
+    {
+      "name": "Яблоки",
+      "category": "Фрукты",
+      "price": 600,
+      "unit": "кг",
+      "image": "/images/apple.jpg"
+    },
+    {
+      "name": "Бананы",
+      "category": "Фрукты",
+      "price": 550,
+      "unit": "кг",
+      "image": "/images/banana.jpg"
+    },
+    {
+      "name": "Апельсины",
+      "category": "Фрукты",
+      "price": 700,
+      "unit": "кг",
+      "image": "/images/orange.jpg"
+    },
+    {
+      "name": "Молоко",
+      "category": "Молочные продукты",
+      "price": 450,
+      "unit": "л",
+      "image": "/images/milk.jpg"
+    },
+    {
+      "name": "Кефир",
+      "category": "Молочные продукты",
+      "price": 500,
+      "unit": "л",
+      "image": "/images/kefir.jpg"
+    },
+    {
+      "name": "Сметана",
+      "category": "Молочные продукты",
+      "price": 650,
+      "unit": "шт",
+      "image": "/images/smetana.jpg"
+    },
+    {
+      "name": "Сыр",
+      "category": "Молочные продукты",
+      "price": 4200,
+      "unit": "кг",
+      "image": "/images/cheese.jpg"
+    },
+    {
+      "name": "Куриное филе",
+      "category": "Мясо",
+      "price": 2800,
+      "unit": "кг",
+      "image": "/images/chicken.jpg"
+    },
+    {
+      "name": "Говядина",
+      "category": "Мясо",
+      "price": 4200,
+      "unit": "кг",
+      "image": "/images/beef.jpg"
+    },
+    {
+      "name": "Свинина",
+      "category": "Мясо",
+      "price": 3800,
+      "unit": "кг",
+      "image": "/images/pork.jpg"
+    },
+    {
+      "name": "Рис",
+      "category": "Крупы",
+      "price": 650,
+      "unit": "кг",
+      "image": "/images/rice.jpg"
+    },
+    {
+      "name": "Гречка",
+      "category": "Крупы",
+      "price": 700,
+      "unit": "кг",
+      "image": "/images/buckwheat.jpg"
+    },
+    {
+      "name": "Макароны",
+      "category": "Крупы",
+      "price": 550,
+      "unit": "кг",
+      "image": "/images/pasta.jpg"
+    },
+    {
+      "name": "Хлеб белый",
+      "category": "Хлеб",
+      "price": 250,
+      "unit": "шт",
+      "image": "/images/bread.jpg"
+    },
+    {
+      "name": "Батон",
+      "category": "Хлеб",
+      "price": 300,
+      "unit": "шт",
+      "image": "/images/baton.jpg"
+    },
+    {
+      "name": "Яйца",
+      "category": "Молочные продукты",
+      "price": 750,
+      "unit": "10 шт",
+      "image": "/images/eggs.jpg"
+    }
+  ]
+}
