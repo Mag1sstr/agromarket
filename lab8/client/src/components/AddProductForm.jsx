@@ -26,22 +26,25 @@ export default function AddProductForm({ token, onProductCreated }) {
     setSuccess(false);
 
     try {
-      const response = await fetch("/api/products", {
-        // Укажите ваш полный путь, если API на другом домене
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Так как эндпоинт защищен requireAuth, передаем JWT-токен (например, из localStorage)
-          Authorization: `Bearer ${token || localStorage.getItem("token")}`,
+      const response = await fetch(
+        "https://agromarket-7lvj.onrender.com/api/products",
+        {
+          // Укажите ваш полный путь, если API на другом домене
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Так как эндпоинт защищен requireAuth, передаем JWT-токен (например, из localStorage)
+            Authorization: `Bearer ${token || localStorage.getItem("token")}`,
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            category: formData.category || null,
+            price: Number(formData.price),
+            unit: formData.unit || "кг",
+            image: formData.image || null,
+          }),
         },
-        body: JSON.stringify({
-          name: formData.name,
-          category: formData.category || null,
-          price: Number(formData.price),
-          unit: formData.unit || "кг",
-          image: formData.image || null,
-        }),
-      });
+      );
 
       const data = await response.json();
 
