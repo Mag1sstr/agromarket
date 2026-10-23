@@ -14,24 +14,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          # Убрали cache: 'npm', чтобы не искал lock-файл в корне
 
-      # 1. Установка зависимостей и тесты бэкенда
+      # 1. Установка зависимостей и тесты бэкенда (с учетом папки lab8)
       - name: Install server dependencies
-        working-directory: ./server
+        working-directory: ./lab8/server
         run: npm ci
 
       - name: Run server tests
-        working-directory: ./server
+        working-directory: ./lab8/server
         run: npm test
 
-      # 2. Установка зависимостей и сборка фронтенда
+      # 2. Установка зависимостей и сборка фронтенда (с учетом папки lab8)
       - name: Install client dependencies
-        working-directory: ./client
+        working-directory: ./lab8/client
         run: npm ci
 
       - name: Build client
-        working-directory: ./client
+        working-directory: ./lab8/client
         run: npm run build
         env:
           VITE_API_URL: https://example.invalid/api
