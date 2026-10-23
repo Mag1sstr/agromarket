@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 22
 
-      # 1. Установка зависимостей и тесты бэкенда (с учетом папки lab8)
+      # 1. Установка зависимостей и тесты бэкенда
       - name: Install server dependencies
         working-directory: ./lab8/server
         run: npm ci
@@ -24,9 +24,9 @@ jobs:
         working-directory: ./lab8/server
         run: npm test
         env:
-          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_db
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/agromarket_test
 
-      # 2. Установка зависимостей и сборка фронтенда (с учетом папки lab8)
+      # 2. Установка зависимостей и сборка фронтенда
       - name: Install client dependencies
         working-directory: ./lab8/client
         run: npm ci
@@ -35,7 +35,7 @@ jobs:
         working-directory: ./lab8/client
         run: npm run build
         env:
-          VITE_API_URL: https://example.invalid/api
+          VITE_API_URL: ${{ vars.API_URL }}
 
   deploy:
     needs: test-and-build
@@ -45,6 +45,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Запуск деплоя бэкенда на Render через деплой-хук
+      # Запуск деплоя бэкенда на Render через деплой-хук из твоих секретов
       - name: Запустить деплой на Render
         run: curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}&ref=${{ github.sha }}"
