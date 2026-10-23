@@ -1,4 +1,6 @@
-const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:3000").replace(/\/$/, "");
+const API_URL = (
+  import.meta.env.VITE_API_URL || "http://localhost:3000"
+).replace(/\/$/, "");
 
 export function apiFetch(path, options = {}) {
   const headers = new Headers(options.headers || {});
@@ -7,8 +9,11 @@ export function apiFetch(path, options = {}) {
   if (options.body && !headers.has("Content-Type")) {
     headers.set("Content-Type", "application/json");
   }
-  return fetch(`${API_URL}${path.startsWith("/") ? path : `/${path}`}`, {
-    ...options,
-    headers,
-  });
+  return fetch(
+    `https://agromarket-7lvj.onrender.com${path.startsWith("/") ? path : `/${path}`}`,
+    {
+      ...options,
+      headers,
+    },
+  );
 }

@@ -35,7 +35,7 @@ router.get("/:id", async (req, res) => {
   res.json(rows[0]);
 });
 // POST /api/products — новый товар
-router.post("/", requireAuth, requireRole("admin"), async (req, res) => {
+router.post("/", async (req, res) => {
   const body = req.body || {};
   const error = validateProduct(body);
   if (error) return res.status(400).json({ error });

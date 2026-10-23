@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import { apiFetch } from "./api";
+import AddProductForm from "./components/AddProductForm";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -43,7 +44,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setLoading(true);
     apiFetch("/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
@@ -99,6 +99,7 @@ function App() {
           </ul>
         </aside>
         <ContactForm />
+        <AddProductForm />
       </main>
 
       <Footer />
