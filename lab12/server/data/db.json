@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "name": "Картофель",
+      "category": "Овощи",
+      "price": 350,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500"
+    },
+    {
+      "name": "Морковь",
+      "category": "Овощи",
+      "price": 280,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1445282768818-728615cc910a?w=500"
+    },
+    {
+      "name": "Помидоры",
+      "category": "Овощи",
+      "price": 750,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=500"
+    },
+    {
+      "name": "Огурцы",
+      "category": "Овощи",
+      "price": 650,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=500"
+    },
+    {
+      "name": "Яблоки",
+      "category": "Фрукты",
+      "price": 600,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500"
+    },
+    {
+      "name": "Бананы",
+      "category": "Фрукты",
+      "price": 550,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500"
+    },
+    {
+      "name": "Апельсины",
+      "category": "Фрукты",
+      "price": 700,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1547514701-42782101795e?w=500"
+    },
+    {
+      "name": "Молоко",
+      "category": "Молочные продукты",
+      "price": 450,
+      "unit": "л",
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500"
+    },
+    {
+      "name": "Кефир",
+      "category": "Молочные продукты",
+      "price": 500,
+      "unit": "л",
+      "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500"
+    },
+    {
+      "name": "Сметана",
+      "category": "Молочные продукты",
+      "price": 650,
+      "unit": "шт",
+      "image": "https://images.unsplash.com/photo-1582452928884-6a5a9b9b2e9f?w=500"
+    },
+    {
+      "name": "Сыр",
+      "category": "Молочные продукты",
+      "price": 4200,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=500"
+    },
+    {
+      "name": "Куриное филе",
+      "category": "Мясо",
+      "price": 2800,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=500"
+    },
+    {
+      "name": "Говядина",
+      "category": "Мясо",
+      "price": 4200,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=500"
+    },
+    {
+      "name": "Свинина",
+      "category": "Мясо",
+      "price": 3800,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=500"
+    },
+    {
+      "name": "Рис",
+      "category": "Крупы",
+      "price": 650,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1536304993881-ff6e9e8c7e0f?w=500"
+    },
+    {
+      "name": "Гречка",
+      "category": "Крупы",
+      "price": 700,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500"
+    },
+    {
+      "name": "Макароны",
+      "category": "Крупы",
+      "price": 550,
+      "unit": "кг",
+      "image": "https://images.unsplash.com/photo-1556761223-4c4282c73f0b?w=500"
+    },
+    {
+      "name": "Хлеб белый",
+      "category": "Хлеб",
+      "price": 250,
+      "unit": "шт",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500"
+    },
+    {
+      "name": "Батон",
+      "category": "Хлеб",
+      "price": 300,
+      "unit": "шт",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500"
+    },
+    {
+      "name": "Яйца",
+      "category": "Молочные продукты",
+      "price": 750,
+      "unit": "10 шт",
+      "image": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=500"
+    }
+  ]
+}
